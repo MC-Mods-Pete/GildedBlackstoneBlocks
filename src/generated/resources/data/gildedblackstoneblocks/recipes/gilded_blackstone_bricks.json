@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "W": {
+      "item": "gildedblackstoneblocks:polished_gilded_blackstone"
+    }
+  },
+  "pattern": [
+    "WW",
+    "WW"
+  ],
+  "result": {
+    "count": 4,
+    "item": "gildedblackstoneblocks:gilded_blackstone_bricks"
+  },
+  "show_notification": true
+}

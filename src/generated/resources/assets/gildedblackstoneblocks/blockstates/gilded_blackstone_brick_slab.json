@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "gildedblackstoneblocks:block/gilded_blackstone_brick_slab"
+    },
+    "type=double": {
+      "model": "gildedblackstoneblocks:block/gilded_blackstone_bricks"
+    },
+    "type=top": {
+      "model": "gildedblackstoneblocks:block/gilded_blackstone_brick_slab_top"
+    }
+  }
+}

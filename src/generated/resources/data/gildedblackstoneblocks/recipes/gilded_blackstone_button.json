@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:gilded_blackstone"
+    }
+  ],
+  "result": {
+    "item": "gildedblackstoneblocks:gilded_blackstone_button"
+  }
+}

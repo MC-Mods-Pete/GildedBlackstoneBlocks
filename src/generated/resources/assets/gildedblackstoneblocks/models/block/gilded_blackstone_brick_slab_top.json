@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "gildedblackstoneblocks:block/gilded_blackstone_bricks",
+    "side": "gildedblackstoneblocks:block/gilded_blackstone_bricks",
+    "top": "gildedblackstoneblocks:block/gilded_blackstone_bricks"
+  }
+}

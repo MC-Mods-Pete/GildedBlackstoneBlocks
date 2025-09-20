@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_down",
+  "textures": {
+    "texture": "gildedblackstoneblocks:block/polished_gilded_blackstone"
+  }
+}
