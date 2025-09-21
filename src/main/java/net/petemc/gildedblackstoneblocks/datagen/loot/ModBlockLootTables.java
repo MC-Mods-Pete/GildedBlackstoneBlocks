@@ -29,7 +29,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_BUTTON.get());
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_PLATE.get());
 
-        this.dropSelf(ModBlocks.POLISHED_CHISELED_GILDED_BLACKSTONE.get());
+        this.dropSelf(ModBlocks.CHISELED_POLISHED_GILDED_BLACKSTONE.get());
 
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE.get());
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE_STAIRS.get());

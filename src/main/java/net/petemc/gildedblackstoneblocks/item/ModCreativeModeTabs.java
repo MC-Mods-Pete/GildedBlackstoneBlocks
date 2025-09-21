@@ -31,7 +31,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.POLISHED_GILDED_BLACKSTONE_WALL.get());
                         pOutput.accept(ModBlocks.POLISHED_GILDED_BLACKSTONE_BUTTON.get());
                         pOutput.accept(ModBlocks.POLISHED_GILDED_BLACKSTONE_PLATE.get());
-                        pOutput.accept(ModBlocks.POLISHED_CHISELED_GILDED_BLACKSTONE.get());
+                        pOutput.accept(ModBlocks.CHISELED_POLISHED_GILDED_BLACKSTONE.get());
 
                         pOutput.accept(ModBlocks.GILDED_BLACKSTONE_BRICKS.get());
                         pOutput.accept(ModBlocks.GILDED_BLACKSTONE_BRICK_STAIRS.get());

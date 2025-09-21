@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gildedblackstoneblocks:polished_chiseled_gilded_blackstone"
+          "name": "gildedblackstoneblocks:chiseled_polished_gilded_blackstone"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "gildedblackstoneblocks:blocks/polished_chiseled_gilded_blackstone"
+  "random_sequence": "gildedblackstoneblocks:blocks/chiseled_polished_gilded_blackstone"
 }

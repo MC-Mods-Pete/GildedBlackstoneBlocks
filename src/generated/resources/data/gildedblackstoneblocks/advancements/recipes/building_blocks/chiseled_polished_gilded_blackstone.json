@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "gildedblackstoneblocks:polished_chiseled_gilded_blackstone"
+        "recipe": "gildedblackstoneblocks:chiseled_polished_gilded_blackstone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "gildedblackstoneblocks:polished_chiseled_gilded_blackstone"
+      "gildedblackstoneblocks:chiseled_polished_gilded_blackstone"
     ]
   },
   "sends_telemetry_event": false

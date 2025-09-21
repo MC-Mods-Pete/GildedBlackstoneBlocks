@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "gildedblackstoneblocks:block/chiseled_polished_gilded_blackstone_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "gildedblackstoneblocks:block/chiseled_polished_gilded_blackstone"
+    },
+    "axis=z": {
+      "model": "gildedblackstoneblocks:block/chiseled_polished_gilded_blackstone_horizontal",
+      "x": 90
+    }
+  }
+}

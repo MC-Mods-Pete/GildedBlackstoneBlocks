@@ -13,7 +13,6 @@ import net.petemc.gildedblackstoneblocks.GildedBlackstoneBlocks;
 import net.petemc.gildedblackstoneblocks.block.ModBlocks;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -106,7 +105,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.POLISHED_GILDED_BLACKSTONE.get()), has(ModBlocks.POLISHED_GILDED_BLACKSTONE.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.POLISHED_CHISELED_GILDED_BLACKSTONE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_POLISHED_GILDED_BLACKSTONE.get())
                 .pattern("W")
                 .pattern("W")
                 .define('W', ModBlocks.POLISHED_GILDED_BLACKSTONE_SLAB.get())

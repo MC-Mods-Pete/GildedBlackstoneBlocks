@@ -22,7 +22,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.GILDED_BLACKSTONE_STAIRS.get(),
                      ModBlocks.GILDED_BLACKSTONE_SLAB.get(),
                      ModBlocks.GILDED_BLACKSTONE_PLATE.get(),
-                     ModBlocks.POLISHED_CHISELED_GILDED_BLACKSTONE.get(),
+                     ModBlocks.CHISELED_POLISHED_GILDED_BLACKSTONE.get(),
                      ModBlocks.POLISHED_GILDED_BLACKSTONE.get(),
                      ModBlocks.POLISHED_GILDED_BLACKSTONE_STAIRS.get(),
                      ModBlocks.POLISHED_GILDED_BLACKSTONE_SLAB.get(),
