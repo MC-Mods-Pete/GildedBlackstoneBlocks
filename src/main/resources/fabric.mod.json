@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${version}",
+	"name": "${mod_name}",
+	"description": "This Mod adds gilded blackstone blocks to the game.",
+	"authors": [
+		"Pete MC Mods, mcmods.pete@gmail.com"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/gilded-blackstone-blocks",
+		"sources": "https://github.com/MC-Mods-Pete/GildedBlackstoneBlocks",
+		"issues": "https://github.com/MC-Mods-Pete/GildedBlackstoneBlocks/issues"
+	},
+	"license": "All rights reserved",
+	"icon": "gildedblackstoneblocks.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.petemc.gildedblackstoneblocks.GildedBlackstoneBlocks"
+		],
+		"modmenu": [
+			"net.petemc.gildedblackstoneblocks.util.ModMenuIntegration"
+		]
+	},
+	"accessWidener" : "gildedblackstoneblocks.accesswidener",
+	"depends": {
+		"fabricloader": "${fabric_version_range}",
+		"minecraft": "${mc_version_range}",
+		"java": "${java_version_range}",
+		"fabric-api": "*",
+		"cloth-config": ">=${cloth_config_version}"
+	},
+	"suggests": {
+		"modmenu": ">=${modmenu_version}",
+		"another-mod": "*"
+	}
+}

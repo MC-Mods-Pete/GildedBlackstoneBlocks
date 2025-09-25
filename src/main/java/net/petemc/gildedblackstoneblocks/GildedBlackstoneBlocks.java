@@ -1,21 +1,29 @@
 package net.petemc.gildedblackstoneblocks;
 
-import com.mojang.logging.LogUtils;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.fabricmc.api.ModInitializer;
+//import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.petemc.gildedblackstoneblocks.block.ModBlocks;
 import net.petemc.gildedblackstoneblocks.item.ModCreativeModeTabs;
 import net.petemc.gildedblackstoneblocks.item.ModItems;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
+public class GildedBlackstoneBlocks implements ModInitializer {
+    public static final String MOD_ID = "gildedblackstoneblocks";
+    public static final String MOD_NAME = "Gilded Blackstone Blocks";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+    public static int globalSpawnCounter = 0;
+
+    @Override
+    public void onInitialize() {
+        LOGGER.info("Initializing the {} Mod", MOD_NAME);
+        ModBlocks.registerModBlocks();
+        ModItems.registerModItems();
+        ModCreativeModeTabs.registerItemGroups();
+    }
+}
+/*
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(GildedBlackstoneBlocks.MOD_ID)
 public class GildedBlackstoneBlocks {
@@ -68,5 +76,7 @@ public class GildedBlackstoneBlocks {
             // client setup code
 
         }
-    }
+
 }
+
+ */

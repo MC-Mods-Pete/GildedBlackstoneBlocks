@@ -1,17 +1,27 @@
 package net.petemc.gildedblackstoneblocks.item;
 
-import net.minecraft.world.item.Item;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 import net.petemc.gildedblackstoneblocks.GildedBlackstoneBlocks;
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, GildedBlackstoneBlocks.MOD_ID);
 
-    public static void register(IEventBus eventBus) {
-        ITEMS.register(eventBus);
+
+    private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
+    }
+
+    private static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, new Identifier(GildedBlackstoneBlocks.MOD_ID, name), item);
+    }
+
+    public static void registerModItems() {
+        GildedBlackstoneBlocks.LOGGER.info("Registering Mod Items for " + GildedBlackstoneBlocks.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
     }
 }
