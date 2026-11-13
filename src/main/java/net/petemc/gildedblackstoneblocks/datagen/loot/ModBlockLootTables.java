@@ -24,7 +24,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         // Gilded
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_STAIRS.get());
-        this.dropSelf(ModBlocks.GILDED_BLACKSTONE_SLAB.get());
+        this.add(ModBlocks.GILDED_BLACKSTONE_SLAB.get(), this::createSlabItemTable);
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_WALL.get());
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_BUTTON.get());
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_PLATE.get());
@@ -33,14 +33,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE.get());
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE_STAIRS.get());
-        this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE_SLAB.get());
+        this.add(ModBlocks.POLISHED_GILDED_BLACKSTONE_SLAB.get(), this::createSlabItemTable);
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE_WALL.get());
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE_BUTTON.get());
         this.dropSelf(ModBlocks.POLISHED_GILDED_BLACKSTONE_PLATE.get());
 
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_BRICKS.get());
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_BRICK_STAIRS.get());
-        this.dropSelf(ModBlocks.GILDED_BLACKSTONE_BRICK_SLAB.get());
+        this.add(ModBlocks.GILDED_BLACKSTONE_BRICK_SLAB.get(), this::createSlabItemTable);
         this.dropSelf(ModBlocks.GILDED_BLACKSTONE_BRICK_WALL.get());
 
     }
