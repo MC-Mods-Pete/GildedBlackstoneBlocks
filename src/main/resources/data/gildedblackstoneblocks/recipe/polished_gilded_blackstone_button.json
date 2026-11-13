@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "gildedblackstoneblocks:polished_gilded_blackstone"
-    }
+    "gildedblackstoneblocks:polished_gilded_blackstone"
   ],
   "result": {
     "id": "gildedblackstoneblocks:polished_gilded_blackstone_button"
