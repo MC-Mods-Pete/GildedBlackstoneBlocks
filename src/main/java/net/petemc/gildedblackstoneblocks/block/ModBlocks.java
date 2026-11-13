@@ -30,7 +30,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE).sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
     public static final Block POLISHED_GILDED_BLACKSTONE_STAIRS = registerBlock("polished_gilded_blackstone_stairs",
             new StairsBlock(ModBlocks.POLISHED_GILDED_BLACKSTONE.getDefaultState(),
-                    AbstractBlock.Settings.copy(Blocks.GILDED_BLACKSTONE)
+                    AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_STAIRS)
                     .sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
     public static final Block POLISHED_GILDED_BLACKSTONE_SLAB = registerBlock("polished_gilded_blackstone_slab",
             new SlabBlock(AbstractBlock.Settings.copy(Blocks.POLISHED_BLACKSTONE_SLAB).sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
