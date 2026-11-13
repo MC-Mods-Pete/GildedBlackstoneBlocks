@@ -5,17 +5,18 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import net.petemc.gildedblackstoneblocks.GildedBlackstoneBlocks;
 import net.petemc.gildedblackstoneblocks.block.ModBlocks;
+
+import java.util.function.Supplier;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GildedBlackstoneBlocks.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> GILDED_BLACKSTONE_BLOCK_TAB = CREATIVE_MODE_TABS.register("gilded_blackstone_blocks_tab",
+    public static final Supplier<CreativeModeTab> GILDED_BLACKSTONE_BLOCK_TAB = CREATIVE_MODE_TABS.register("gilded_blackstone_blocks_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Blocks.GILDED_BLACKSTONE))
                     .title(Component.translatable("creativetab.gildedblackstoneblocks_tab"))
                     .displayItems((pParameters, pOutput) -> {

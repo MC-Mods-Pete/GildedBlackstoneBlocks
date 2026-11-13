@@ -1,16 +1,17 @@
 package net.petemc.gildedblackstoneblocks;
 
 import com.mojang.logging.LogUtils;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.petemc.gildedblackstoneblocks.block.ModBlocks;
 import net.petemc.gildedblackstoneblocks.item.ModCreativeModeTabs;
 import net.petemc.gildedblackstoneblocks.item.ModItems;
@@ -22,9 +23,7 @@ public class GildedBlackstoneBlocks {
     public static final String MOD_ID = "gildedblackstoneblocks";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-
-    public GildedBlackstoneBlocks(FMLJavaModLoadingContext context) {
-        IEventBus modEventBus = context.getModEventBus();
+    public GildedBlackstoneBlocks(IEventBus modEventBus, ModContainer modContainer) {
 
         ModCreativeModeTabs.register(modEventBus);
 
@@ -35,7 +34,7 @@ public class GildedBlackstoneBlocks {
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -60,7 +59,7 @@ public class GildedBlackstoneBlocks {
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
     {
         @SubscribeEvent
