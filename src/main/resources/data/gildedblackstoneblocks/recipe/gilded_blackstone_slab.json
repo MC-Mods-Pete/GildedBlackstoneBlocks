@@ -7,12 +7,11 @@
     }
   },
   "pattern": [
-    "WWW",
     "WWW"
   ],
   "result": {
     "count": 6,
-    "item": "gildedblackstoneblocks:gilded_blackstone_wall"
+    "id": "gildedblackstoneblocks:gilded_blackstone_slab"
   },
   "show_notification": true
 }

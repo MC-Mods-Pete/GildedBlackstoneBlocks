@@ -13,7 +13,7 @@ import net.petemc.gildedblackstoneblocks.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(GildedBlackstoneBlocks.MOD_ID, "gilded_blackstone_blocks_tab"),
+            Identifier.of(GildedBlackstoneBlocks.MOD_ID, "gilded_blackstone_blocks_tab"),
             FabricItemGroup.builder().displayName(Text.translatable("creativetab.gildedblackstoneblocks_tab"))
                     .icon(() -> new ItemStack(Blocks.GILDED_BLACKSTONE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GILDED_BLACKSTONE_STAIRS);

@@ -7,12 +7,10 @@
     }
   },
   "pattern": [
-    "WWW",
-    "WWW"
+    "WW"
   ],
   "result": {
-    "count": 6,
-    "item": "gildedblackstoneblocks:polished_gilded_blackstone_wall"
+    "id": "gildedblackstoneblocks:polished_gilded_blackstone_pressure_plate"
   },
   "show_notification": true
 }

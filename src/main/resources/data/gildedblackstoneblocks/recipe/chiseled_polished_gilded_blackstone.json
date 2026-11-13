@@ -3,14 +3,15 @@
   "category": "building",
   "key": {
     "W": {
-      "item": "minecraft:gilded_blackstone"
+      "item": "gildedblackstoneblocks:polished_gilded_blackstone_slab"
     }
   },
   "pattern": [
-    "WW"
+    "W",
+    "W"
   ],
   "result": {
-    "item": "gildedblackstoneblocks:gilded_blackstone_pressure_plate"
+    "id": "gildedblackstoneblocks:chiseled_polished_gilded_blackstone"
   },
   "show_notification": true
 }

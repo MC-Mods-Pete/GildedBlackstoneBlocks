@@ -3,15 +3,16 @@
   "category": "building",
   "key": {
     "W": {
-      "item": "gildedblackstoneblocks:polished_gilded_blackstone_slab"
+      "item": "gildedblackstoneblocks:gilded_blackstone_bricks"
     }
   },
   "pattern": [
-    "W",
-    "W"
+    "WWW",
+    "WWW"
   ],
   "result": {
-    "item": "gildedblackstoneblocks:chiseled_polished_gilded_blackstone"
+    "count": 6,
+    "id": "gildedblackstoneblocks:gilded_blackstone_brick_wall"
   },
   "show_notification": true
 }

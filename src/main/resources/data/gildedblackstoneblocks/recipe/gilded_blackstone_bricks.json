@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "W": {
-      "item": "minecraft:gilded_blackstone"
+      "item": "gildedblackstoneblocks:polished_gilded_blackstone"
     }
   },
   "pattern": [
@@ -11,7 +11,8 @@
     "WW"
   ],
   "result": {
-    "item": "gildedblackstoneblocks:polished_gilded_blackstone"
+    "count": 4,
+    "id": "gildedblackstoneblocks:gilded_blackstone_bricks"
   },
   "show_notification": true
 }

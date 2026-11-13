@@ -7,13 +7,10 @@
     }
   },
   "pattern": [
-    "W  ",
-    "WW ",
-    "WWW"
+    "WW"
   ],
   "result": {
-    "count": 4,
-    "item": "gildedblackstoneblocks:gilded_blackstone_stairs"
+    "id": "gildedblackstoneblocks:gilded_blackstone_pressure_plate"
   },
   "show_notification": true
 }
