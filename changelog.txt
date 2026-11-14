@@ -1,0 +1,7 @@
+Gilded Blackstone Blocks Changelog
+==================================
+
+1.0.2-Fabric-mc1.21
+-------------------
+Fixes
+ - Double slabs (two slabs on top of each other) now drop both slabs when broken
