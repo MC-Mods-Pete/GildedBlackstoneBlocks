@@ -5,9 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "gildedblackstoneblocks:polished_gilded_blackstone"
-            ]
+            "items": "gildedblackstoneblocks:polished_gilded_blackstone"
           }
         ]
       },
@@ -15,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "gildedblackstoneblocks:gilded_blackstone_brick_wall"
+        "recipes": "gildedblackstoneblocks:gilded_blackstone_brick_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
