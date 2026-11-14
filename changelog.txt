@@ -1,0 +1,10 @@
+Gilded Blackstone Blocks Changelog
+==================================
+
+1.0.2-Fabric-mc26.1
+-------------------
+New
+ - Support for Minecraft 26.1 and 26.2
+
+Fixes
+ - Double slabs (two slabs on top of each other) now drop both slabs when broken
